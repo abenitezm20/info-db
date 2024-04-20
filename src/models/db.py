@@ -30,4 +30,5 @@ def init_db():
     from .tipo_plan_alimenticio import TipoPlanAlimenticio
     from .menu import Menu
     from .plan_alimenticio import PlanAlimenticio
+    from .plan_deportista import PlanDeportista
     Base.metadata.create_all(bind=engine)

@@ -2,22 +2,16 @@
   "planes": [
     {
       "plan": "Resistencia Runner",
-      "nombre_plan": "Pizza clásica",
-      "descripcion": "Deliciosa pizza clásica con ingredientes frescos y de calidad",
       "tipo_menu": "Estándar",
       "menus": ["Pizza Margarita", "Té Helado"]
     },
     {
       "plan": "Resistencia Runner",
-      "nombre_plan": "Menú Teriyaki",
-      "descripcion": "Menú con plato principal de tofu teriyaki, limonada y tarta de manzana",
       "tipo_menu": "Vegetariano",
       "menus": ["Tofu Teriyaki", "Limonada", "Tarta de Manzana"]
     },
     {
       "plan": "Resistencia Rider",
-      "nombre_plan": "Curry de Lentejas",
-      "descripcion": "Curry de lentejas con arroz, agua de coco y fruta fresca",
       "tipo_menu": "Vegano",
       "menus": ["Curry de Lentejas", "Agua de Coco", "Fruta Fresca"]
     }

@@ -4,10 +4,12 @@ import logging
 
 from src.models.db import db_session
 from src.models.deporte import Deporte
+from src.models.deportista import Deportista
 from src.models.ejercicio_deporte import EjercicioDeporte
 from src.models.menu import Menu
 from src.models.plan import Plan
 from src.models.plan_alimenticio import PlanAlimenticio
+from src.models.plan_deportista import PlanDeportista
 from src.models.plan_ejercicio import PlanEjercicio
 from src.models.tipo_plan_alimenticio import TipoPlanAlimenticio
 from src.models.plan_subscripcion import PlanSubscripcion
@@ -25,6 +27,9 @@ def precargar_informacion():
     _precargar_menu()
     _precargar_plan_alimenticio()
     _precargar_plan_subscripcion()
+
+    _precargar_deportista()
+    _precargar_plan_deportista()
 
 
 def _precargar_deporte():
@@ -132,8 +137,6 @@ def _precargar_plan_alimenticio():
                 nuevo_plan_menu = {
                     "id_tipo_plan_alimenticio": tipo_plan_alimenticio.id,
                     "id_menu": tmp.id,
-                    "nombre": cfg['nombre_plan'],
-                    "descripcion": cfg['descripcion'],
                     "id_plan": plan.id,
                 }
 
@@ -148,3 +151,31 @@ def _precargar_plan_subscripcion():
             db_session.add(PlanSubscripcion(nombre=planes))
         db_session.commit()
         print("Planes de Subscripcion precargados")
+
+def _precargar_deportista():
+    if not Deportista.query.all():
+        with open("cfg/deportista.json", encoding="utf-8") as deportista_file:
+            deportista_cfg = json.load(deportista_file)
+
+        for deportista in deportista_cfg['deportistas']:
+            db_session.add(Deportista(**deportista))
+        db_session.commit()
+        print("Deportistas precargados")
+
+
+def _precargar_plan_deportista():
+    if not PlanDeportista.query.all():
+        with open("cfg/plan_deportista.json", encoding="utf-8") as plan_deportista_file:
+            plan_deportista_cfg = json.load(plan_deportista_file)
+
+        for cfg in plan_deportista_cfg['planes_deportistas']:
+            plan: Plan = Plan.query.filter_by(
+                nombre=cfg['nombre_plan']).first()
+
+            deportista: Deportista = Deportista.query.filter_by(
+                email=cfg['email_deportista']).first()
+
+            db_session.add(PlanDeportista(
+                id_deportista=deportista.id, id_plan=plan.id))
+        db_session.commit()
+        print("Planes deportistas precargados")
