@@ -1,0 +1,164 @@
+{
+  "menus": [
+    {
+      "nombre": "Hamburguesa Clásica",
+      "calorias": 500,
+      "porcion": 200,
+      "medida": "g",
+      "descripcion": "Deliciosa hamburguesa con carne de res, queso cheddar, lechuga y tomate.",
+      "tipo_menu": "Estándar"
+    },
+    {
+      "nombre": "Pizza Margarita",
+      "calorias": 700,
+      "porcion": 300,
+      "medida": "g",
+      "descripcion": "Pizza clásica con salsa de tomate, mozzarella fresca y albahaca.",
+      "tipo_menu": "Estándar"
+    },
+    {
+      "nombre": "Pollo a la Parrilla",
+      "calorias": 400,
+      "porcion": 250,
+      "medida": "g",
+      "descripcion": "Pechuga de pollo a la parrilla con vegetales asados.",
+      "tipo_menu": "Estándar"
+    },
+    {
+      "nombre": "Ensalada César",
+      "calorias": 300,
+      "porcion": 150,
+      "medida": "g",
+      "descripcion": "Ensalada fresca con lechuga romana, pollo a la parrilla, crutones y aderezo César.",
+      "tipo_menu": "Estándar"
+    },
+    {
+      "nombre": "Sándwich de Portobello",
+      "calorias": 450,
+      "porcion": 200,
+      "medida": "g",
+      "descripcion": "Sándwich vegetariano con hongos portobello asados, pimientos y queso suizo.",
+      "tipo_menu": "Vegetariano"
+    },
+    {
+      "nombre": "Tofu Teriyaki",
+      "calorias": 350,
+      "porcion": 250,
+      "medida": "g",
+      "descripcion": "Tofu a la parrilla con salsa teriyaki, servido con arroz integral y vegetales al vapor.",
+      "tipo_menu": "Vegetariano"
+    },
+    {
+      "nombre": "Sopa de Verduras",
+      "calorias": 200,
+      "porcion": 300,
+      "medida": "g",
+      "descripcion": "Sopa reconfortante llena de verduras frescas y fideos de trigo integral.",
+      "tipo_menu": "Vegetariano"
+    },
+    {
+      "nombre": "Pasta Primavera",
+      "calorias": 450,
+      "porcion": 250,
+      "medida": "g",
+      "descripcion": "Pasta integral con salsa de tomate fresco, espárragos, guisantes y champiñones.",
+      "tipo_menu": "Vegetariano"
+    },
+    {
+      "nombre": "Ensalada de Quinoa",
+      "calorias": 350,
+      "porcion": 200,
+      "medida": "g",
+      "descripcion": "Ensalada saludable de quinoa con pepino, tomate, aguacate y aderezo de limón.",
+      "tipo_menu": "Vegano"
+    },
+    {
+      "nombre": "Curry de Lentejas",
+      "calorias": 400,
+      "porcion": 300,
+      "medida": "g",
+      "descripcion": "Curry vegano de lentejas con arroz basmati y pan naan integral.",
+      "tipo_menu": "Vegano"
+    },
+    {
+      "nombre": "Tacos de Tofu",
+      "calorias": 350,
+      "porcion": 250,
+      "medida": "g",
+      "descripcion": "Tacos veganos de tofu con guacamole, salsa picante y cilantro fresco.",
+      "tipo_menu": "Vegano"
+    },
+    {
+      "nombre": "Bowl de Açaí",
+      "calorias": 300,
+      "porcion": 200,
+      "medida": "g",
+      "descripcion": "Bowl de açaí con plátano, fresas, granola y miel de agave.",
+      "tipo_menu": "Vegano"
+    },
+    {
+      "nombre": "Jugo de Naranja",
+      "calorias": 150,
+      "porcion": 250,
+      "medida": "ml",
+      "descripcion": "Jugo fresco de naranja recién exprimido.",
+      "tipo_menu": "Bebida"
+    },
+    {
+      "nombre": "Limonada",
+      "calorias": 100,
+      "porcion": 300,
+      "medida": "ml",
+      "descripcion": "Refrescante limonada casera.",
+      "tipo_menu": "Bebida"
+    },
+    {
+      "nombre": "Té Helado",
+      "calorias": 80,
+      "porcion": 350,
+      "medida": "ml",
+      "descripcion": "Té helado frío y refrescante.",
+      "tipo_menu": "Bebida"
+    },
+    {
+      "nombre": "Agua de Coco",
+      "calorias": 50,
+      "porcion": 200,
+      "medida": "ml",
+      "descripcion": "Agua de coco natural, perfecta para hidratarse.",
+      "tipo_menu": "Bebida"
+    },
+    {
+      "nombre": "Pastel de Chocolate",
+      "calorias": 400,
+      "porcion": 150,
+      "medida": "g",
+      "descripcion": "Delicioso pastel de chocolate con frosting de vainilla.",
+      "tipo_menu": "Postre"
+    },
+    {
+      "nombre": "Helado de Vainilla",
+      "calorias": 300,
+      "porcion": 200,
+      "medida": "g",
+      "descripcion": "Helado cremoso de vainilla.",
+      "tipo_menu": "Postre"
+    },
+    {
+      "nombre": "Tarta de Manzana",
+      "calorias": 350,
+      "porcion": 250,
+      "medida": "g",
+      "descripcion": "Tarta clásica de manzana con canela.",
+      "tipo_menu": "Postre"
+    },
+    {
+      "nombre": "Fruta Fresca",
+      "calorias": 100,
+      "porcion": 100,
+      "medida": "g",
+      "descripcion": "Selección de frutas frescas de temporada.",
+      "tipo_menu": "Postre"
+    }
+  ]
+}

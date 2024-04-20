@@ -1,0 +1,116 @@
+{
+  "atletismo": [
+    {
+      "nombre": "Carrera de Fartlek",
+      "duracion": 20,
+      "descripcion": "Entrenamiento de carrera que combina intervalos de velocidad variable con períodos de carrera continua."
+    },
+    {
+      "nombre": "Entrenamiento de Intervalos",
+      "duracion": 25,
+      "descripcion": "Mejora la resistencia y la velocidad."
+    },
+    {
+      "nombre": "Zancadas",
+      "duracion": 15,
+      "descripcion": "Fortalece las piernas y mejora la técnica de carrera."
+    },
+    {
+      "nombre": "Abdominales runner",
+      "duracion": 10,
+      "descripcion": "Fortalece el core y mejora la estabilidad."
+    },
+    {
+      "nombre": "Flexiones",
+      "duracion": 15,
+      "descripcion": "Fortalece los brazos y el core."
+    },
+    {
+      "nombre": "Estiramientos",
+      "duracion": 15,
+      "descripcion": "Mejora la flexibilidad y previene lesiones."
+    },
+    {
+      "nombre": "Carrera en Cuesta",
+      "duracion": 20,
+      "descripcion": "Mejora la resistencia y la fuerza en las piernas."
+    },
+    {
+      "nombre": "Saltos en Lugar",
+      "duracion": 10,
+      "descripcion": "Mejora la potencia y la fuerza explosiva."
+    },
+    {
+      "nombre": "Elevaciones de Rodilla",
+      "duracion": 15,
+      "descripcion": "Mejora la fuerza y la resistencia en las piernas."
+    },
+    {
+      "nombre": "Flexiones en Barras",
+      "duracion": 15,
+      "descripcion": "Fortalece los brazos y el core."
+    },
+    {
+      "nombre": "Recuperación activa runner",
+      "duracion": 30,
+      "descripcion": "Sesión de recuperación ligera. Trote suave y estiramientos para facilitar la recuperación muscular."
+    }
+  ],
+  "ciclismo": [
+    {
+      "nombre": "Sentadillas",
+      "duracion": 15,
+      "descripcion": "Fortalece piernas y glúteos."
+    },
+    {
+      "nombre": "Pedaleo en Resistencia",
+      "duracion": 20,
+      "descripcion": "Mejora resistencia y fuerza en piernas."
+    },
+    {
+      "nombre": "Plancha",
+      "duracion": 10,
+      "descripcion": "Fortalece el core, crucial para la estabilidad."
+    },
+    {
+      "nombre": "Elevaciones de Gemelos",
+      "duracion": 10,
+      "descripcion": "Fortalece los músculos de las pantorrillas."
+    },
+    {
+      "nombre": "Flexiones de Brazos",
+      "duracion": 15,
+      "descripcion": "Fortalece los brazos y el core."
+    },
+    {
+      "nombre": "Estiramientos de Piernas",
+      "duracion": 10,
+      "descripcion": "Mejora la flexibilidad y previene lesiones."
+    },
+    {
+      "nombre": "Intervalos en Bicicleta",
+      "duracion": 25,
+      "descripcion": "Mejora la resistencia cardiovascular y la velocidad."
+    },
+    {
+      "nombre": "Escalones",
+      "duracion": 15,
+      "descripcion": "Fortalece las piernas y mejora la resistencia."
+    },
+    {
+      "nombre": "Abdominales ciclismo",
+      "duracion": 10,
+      "descripcion": "Fortalece el core y mejora la postura en la bicicleta."
+    },
+    {
+      "nombre": "Flexiones en Manillar",
+      "duracion": 15,
+      "descripcion": "Fortalece los brazos y mejora la técnica de manejo."
+    },
+    {
+      "nombre": "Recuperación activa ciclismo",
+      "duracion": 30,
+      "descripcion": "Sesión de recuperación ligera. Pedalear suave y estiramientos para facilitar la recuperación muscular."
+    }
+  ]
+}

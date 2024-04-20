@@ -1,0 +1,22 @@
+{
+  "planes": [
+    {
+      "nombre_plan": "Resistencia Runner",
+      "descripcion": "Combina Carrera de Fartlek, Entrenamiento de Intervalos y Recuperación activa para mejorar la resistencia y velocidad.",
+      "ejercicios": [
+        "Carrera de Fartlek",
+        "Entrenamiento de Intervalos",
+        "Recuperación activa runner"
+      ]
+    },
+    {
+      "nombre_plan": "Resistencia Rider",
+      "descripcion": "Pedaleo en Resistencia, Intervalos en Bicicleta y Recuperación activa para mejorar la resistencia cardiovascular y la velocidad.",
+      "ejercicios": [
+        "Pedaleo en Resistencia",
+        "Intervalos en Bicicleta",
+        "Recuperación activa ciclismo"
+      ]
+    }
+  ]
+}
