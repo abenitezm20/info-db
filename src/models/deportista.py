@@ -1,6 +1,7 @@
 import enum
 from datetime import datetime
-from sqlalchemy import Column, Integer, Enum, String, Float, BigInteger
+from sqlalchemy import UUID, Column, Integer, Enum, String, Float, BigInteger, ForeignKey
+from sqlalchemy.orm import Mapped, relationship
 from .model import Model
 from .db import Base
 
@@ -36,6 +37,8 @@ class Deportista(Model, Base):
     ciudad_residencia = Column(String(50))
     antiguedad_residencia = Column(Integer)
     contrasena = Column(String(50))
+    id_plan_subscripcion = Column(UUID, ForeignKey('plan_subscripcion.id'))
+    plan_subscripcion = relationship('PlanSubscripcion')
 
     def __init__(self, **info_deportista):
         Model.__init__(self)
