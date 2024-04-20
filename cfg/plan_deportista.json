@@ -1,0 +1,12 @@
+{
+  "planes_deportistas": [
+    {
+      "email_deportista": "juan.perez@sportapp.com",
+      "nombre_plan": "Resistencia Runner"
+    },
+    {
+      "email_deportista": "juan.perez@sportapp.com",
+      "nombre_plan": "Resistencia Rider"
+    }
+  ]
+}
