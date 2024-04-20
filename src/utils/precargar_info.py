@@ -10,6 +10,7 @@ from src.models.plan import Plan
 from src.models.plan_alimenticio import PlanAlimenticio
 from src.models.plan_ejercicio import PlanEjercicio
 from src.models.tipo_plan_alimenticio import TipoPlanAlimenticio
+from src.models.plan_subscripcion import PlanSubscripcion
 
 
 logger = logging.getLogger(__name__)
@@ -23,6 +24,7 @@ def precargar_informacion():
     _precargar_tipo_plan_alimenticio()
     _precargar_menu()
     _precargar_plan_alimenticio()
+    _precargar_plan_subscripcion()
 
 
 def _precargar_deporte():
@@ -138,3 +140,11 @@ def _precargar_plan_alimenticio():
                 db_session.add(PlanAlimenticio(**nuevo_plan_menu))
         db_session.commit()
         print("Planes alimenticios precargados")
+
+def _precargar_plan_subscripcion():
+    if not PlanSubscripcion.query.all():
+        planesSubs = ["Gratis", "Intermedio", "Premium"]
+        for planes in planesSubs:
+            db_session.add(PlanSubscripcion(nombre=planes))
+        db_session.commit()
+        print("Planes de Subscripcion precargados")
