@@ -144,6 +144,7 @@ def _precargar_plan_alimenticio():
         db_session.commit()
         print("Planes alimenticios precargados")
 
+
 def _precargar_plan_subscripcion():
     if not PlanSubscripcion.query.all():
         planesSubs = ["Gratis", "Intermedio", "Premium"]
@@ -152,12 +153,19 @@ def _precargar_plan_subscripcion():
         db_session.commit()
         print("Planes de Subscripcion precargados")
 
+
 def _precargar_deportista():
     if not Deportista.query.all():
         with open("cfg/deportista.json", encoding="utf-8") as deportista_file:
             deportista_cfg = json.load(deportista_file)
 
         for deportista in deportista_cfg['deportistas']:
+
+            ps: PlanSubscripcion = PlanSubscripcion.query.filter_by(
+                nombre=deportista['plan_subscripcion_nombre']).first()
+
+            deportista['id_plan_subscripcion'] = ps.id
+
             db_session.add(Deportista(**deportista))
         db_session.commit()
         print("Deportistas precargados")

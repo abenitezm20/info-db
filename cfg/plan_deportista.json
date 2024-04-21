@@ -5,8 +5,12 @@
       "nombre_plan": "Resistencia Runner"
     },
     {
-      "email_deportista": "juan.perez@sportapp.com",
+      "email_deportista": "maria.gomez@sportapp.com",
       "nombre_plan": "Resistencia Rider"
+    },
+    {
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "nombre_plan": "Carrera 5K"
     }
   ]
 }

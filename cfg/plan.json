@@ -9,6 +9,11 @@
       "nombre": "Resistencia Rider",
       "descripcion": "Pedaleo en Resistencia, Intervalos en Bicicleta y Recuperación activa para mejorar la resistencia cardiovascular y la velocidad.",
       "vo2": 45
+    },
+    {
+      "nombre": "Carrera 5K",
+      "descripcion": "Entrenamiento para iniciar en el mundo del atletismo con el objetivo de correr 5K.",
+      "vo2": 0
     }
   ]
 }

@@ -17,6 +17,16 @@
         "Intervalos en Bicicleta",
         "Recuperación activa ciclismo"
       ]
+    },
+    {
+      "nombre_plan": "Carrera 5K",
+      "descripcion": "Plan de entrenamiento para correr una carrera de 5K.",
+      "ejercicios": [
+        "Estiramientos",
+        "Saltos en Lugar",
+        "Entrenamiento de Intervalos",
+        "Recuperación activa runner"
+      ]
     }
   ]
 }
