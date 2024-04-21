@@ -13,6 +13,7 @@ from src.models.plan_deportista import PlanDeportista
 from src.models.plan_ejercicio import PlanEjercicio
 from src.models.tipo_plan_alimenticio import TipoPlanAlimenticio
 from src.models.plan_subscripcion import PlanSubscripcion
+from src.models.detalle_subscripcion import DetalleSubscripcion
 
 
 logger = logging.getLogger(__name__)
@@ -27,6 +28,7 @@ def precargar_informacion():
     _precargar_menu()
     _precargar_plan_alimenticio()
     _precargar_plan_subscripcion()
+    _precargar_detalle_subscripcion()
 
     _precargar_deportista()
     _precargar_plan_deportista()
@@ -152,6 +154,21 @@ def _precargar_plan_subscripcion():
             db_session.add(PlanSubscripcion(nombre=planes))
         db_session.commit()
         print("Planes de Subscripcion precargados")
+
+
+def _precargar_detalle_subscripcion():
+    if not DetalleSubscripcion.query.all():
+        with open("cfg/detalle_subscripcion.json", encoding="utf-8") as detalle_subscripcion_file:
+            detalle_subscripcion_cfg = json.load(detalle_subscripcion_file)
+
+        for cfg in detalle_subscripcion_cfg['detalle_subscripcion']:
+            planSubscripcion: PlanSubscripcion = PlanSubscripcion.query.filter_by(
+                nombre=cfg['nombre']).first()
+
+            db_session.add(DetalleSubscripcion(
+                id_plan_subscripcion=planSubscripcion.id, beneficios=cfg['beneficios']))
+        db_session.commit()
+        print("Detalles de subscripcion precargados")
 
 
 def _precargar_deportista():
