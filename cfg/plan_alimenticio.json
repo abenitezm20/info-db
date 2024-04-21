@@ -14,6 +14,27 @@
       "plan": "Resistencia Rider",
       "tipo_menu": "Vegano",
       "menus": ["Curry de Lentejas", "Agua de Coco", "Fruta Fresca"]
+    },
+    {
+      "plan": "Carrera 10K",
+      "tipo_menu": "Estándar",
+      "menus": [
+        "Hamburguesa Clásica",
+        "Pollo a la Parrilla",
+        "Jugo de Naranja",
+        "Pastel de Chocolate"
+      ]
+    },
+    {
+      "plan": "Brazos Cyclist",
+      "tipo_menu": "Vegetariano",
+      "menus": [
+        "Sándwich de Portobello",
+        "Pasta Primavera",
+        "Sopa de Verduras",
+        "Té Helado",
+        "Fruta Fresca"
+      ]
     }
   ]
 }

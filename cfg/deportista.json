@@ -53,6 +53,42 @@
       "antiguedad_residencia": 35,
       "contrasena": "UHJ1ZWJhMDAxKg==",
       "plan_subscripcion_nombre": "Gratis"
+    },
+    {
+      "nombre": "Pedro",
+      "apellido": "Zapata",
+      "tipo_identificacion": "cedula_ciudadania",
+      "numero_identificacion": "78954565",
+      "email": "pedro.zapata@sportapp.com",
+      "genero": "masculino",
+      "edad": 25,
+      "peso": 80.5,
+      "altura": 175.0,
+      "pais_nacimiento": "Colombia",
+      "ciudad_nacimiento": "Bucaramanga",
+      "pais_residencia": "Colombia",
+      "ciudad_residencia": "Bucaramanga",
+      "antiguedad_residencia": 25,
+      "contrasena": "UHJ1ZWJhMDAxKg==",
+      "plan_subscripcion_nombre": "Intermedio"
+    },
+    {
+      "nombre": "Luisa",
+      "apellido": "Rodriguez",
+      "tipo_identificacion": "cedula_ciudadania",
+      "numero_identificacion": "75321485",
+      "email": "luisa.rodriguez@sportapp.com",
+      "genero": "femenino",
+      "edad": 32,
+      "peso": 70.5,
+      "altura": 168.0,
+      "pais_nacimiento": "Colombia",
+      "ciudad_nacimiento": "Cartagena",
+      "pais_residencia": "Colombia",
+      "ciudad_residencia": "Barraquilla",
+      "antiguedad_residencia": 15,
+      "contrasena": "UHJ1ZWJhMDAxKg==",
+      "plan_subscripcion_nombre": "Premium"
     }
   ]
 }

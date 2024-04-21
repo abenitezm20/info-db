@@ -8,12 +8,22 @@
     {
       "nombre": "Resistencia Rider",
       "descripcion": "Pedaleo en Resistencia, Intervalos en Bicicleta y Recuperación activa para mejorar la resistencia cardiovascular y la velocidad.",
-      "vo2": 45
+      "vo2": 44
     },
     {
       "nombre": "Carrera 5K",
       "descripcion": "Entrenamiento para iniciar en el mundo del atletismo con el objetivo de correr 5K.",
       "vo2": 0
+    },
+    {
+      "nombre": "Carrera 10K",
+      "descripcion": "Entrenamiento para deportistas intermedios que buscan mejorar su tiempo en 10K.",
+      "vo2": 48
+    },
+    {
+      "nombre": "Brazos Cyclist",
+      "descripcion": "Flexiones de Brazos y Flexiones en Manillar para fortalecer los brazos y mejorar la técnica de manejo.",
+      "vo2": 50
     }
   ]
 }

@@ -27,6 +27,27 @@
         "Entrenamiento de Intervalos",
         "Recuperación activa runner"
       ]
+    },
+    {
+      "nombre_plan": "Carrera 10K",
+      "descripcion": "Plan de entrenamiento para mejorar el rendimiento en una carrera de 10K.",
+      "ejercicios": [
+        "Estiramientos",
+        "Zancadas",
+        "Entrenamiento de Intervalos",
+        "Abdominales runner",
+        "Recuperación activa runner"
+      ]
+    },
+    {
+      "nombre_plan": "Brazos Cyclist",
+      "descripcion": "Entrenamiento de fuerza para mejorar la resistencia y técnica en bicicleta.",
+      "ejercicios": [
+        "Flexiones de Brazos",
+        "Intervalos en Bicicleta",
+        "Flexiones en Manillar",
+        "Recuperación activa ciclismo"
+      ]
     }
   ]
 }
