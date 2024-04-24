@@ -11,6 +11,8 @@ from src.models.plan import Plan
 from src.models.plan_alimenticio import PlanAlimenticio
 from src.models.plan_deportista import PlanDeportista
 from src.models.plan_ejercicio import PlanEjercicio
+from src.models.resultado_sesion import ResultadoSesion
+from src.models.sesion import EstadoSesionEnum, Sesion
 from src.models.tipo_plan_alimenticio import TipoPlanAlimenticio
 from src.models.plan_subscripcion import PlanSubscripcion
 from src.models.detalle_subscripcion import DetalleSubscripcion
@@ -32,6 +34,8 @@ def precargar_informacion():
 
     _precargar_deportista()
     _precargar_plan_deportista()
+
+    _precargar_sesiones()
 
 
 def _precargar_deporte():
@@ -204,3 +208,37 @@ def _precargar_plan_deportista():
                 id_deportista=deportista.id, id_plan=plan.id))
         db_session.commit()
         print("Planes deportistas precargados")
+
+
+def _precargar_sesiones():
+    if not Sesion.query.all():
+        with open("cfg/sesiones.json", encoding="utf-8") as sesion_file:
+            sesion_cfg = json.load(sesion_file)
+
+        for sesion in sesion_cfg['sesiones']:
+            plan: Plan = Plan.query.filter_by(
+                nombre=sesion['nombre_plan_deportista']).first()
+
+            plan_deportista: PlanDeportista = PlanDeportista.query.filter_by(
+                id_plan=plan.id).first()
+
+            nueva_sesion = Sesion(
+                id_plan_deportista=plan_deportista.id,
+                email=plan_deportista.deportista.email,
+                estado=EstadoSesionEnum[sesion['estado']],
+                fecha_sesion=sesion['fecha_sesion']
+            )
+            db_session.add(nueva_sesion)
+            db_session.commit()
+
+            resultado_sesion: ResultadoSesion = ResultadoSesion(
+                id_sesion=nueva_sesion.id,
+                fecha_inicio=sesion['resultado']['fecha_inicio'],
+                fecha_fin=sesion['resultado']['fecha_fin'],
+                vo2_max=sesion['resultado']['vo2_max'],
+                ftp=sesion['resultado']['ftp']
+            )
+
+            db_session.add(resultado_sesion)
+            db_session.commit()
+        print("Sesiones precargadas")

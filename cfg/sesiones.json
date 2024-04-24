@@ -1,0 +1,146 @@
+{
+  "sesiones": [
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-01-01T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-01-01T12:00:00",
+        "fecha_fin": "2024-01-01T12:00:00",
+        "vo2_max": 40,
+        "ftp": 2.02
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-01-11T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-01-11T12:00:00",
+        "fecha_fin": "2024-01-11T12:00:00",
+        "vo2_max": 41,
+        "ftp": 2.05,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-01-21T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-01-21T12:00:00",
+        "fecha_fin": "2024-01-21T12:00:00",
+        "vo2_max": 42,
+        "ftp": 2.08,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-02-01T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-02-01T12:00:00",
+        "fecha_fin": "2024-02-01T12:00:00",
+        "vo2_max": 43,
+        "ftp": 2.11,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-02-11T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-02-11T12:00:00",
+        "fecha_fin": "2024-02-11T12:00:00",
+        "vo2_max": 44,
+        "ftp": 2.14,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-02-21T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-02-21T12:00:00",
+        "fecha_fin": "2024-02-21T12:00:00",
+        "vo2_max": 45,
+        "ftp": 2.17,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-03-01T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-03-01T12:00:00",
+        "fecha_fin": "2024-03-01T12:00:00",
+        "vo2_max": 46,
+        "ftp": 2.2,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-03-11T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-03-11T12:00:00",
+        "fecha_fin": "2024-03-11T12:00:00",
+        "vo2_max": 47,
+        "ftp": 2.23,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-03-21T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-03-21T12:00:00",
+        "fecha_fin": "2024-03-21T12:00:00",
+        "vo2_max": 48,
+        "ftp": 2.26,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-04-01T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-04-01T12:00:00",
+        "fecha_fin": "2024-04-01T12:00:00",
+        "vo2_max": 49,
+        "ftp": 2.29,
+        "estado": "finalizada"
+      }
+    },
+    {
+      "nombre_plan_deportista": "Resistencia Runner",
+      "email_deportista": "cosme.fulanito@sportapp.com",
+      "estado": "finalizada",
+      "fecha_sesion": "2024-04-22T12:00:00",
+      "resultado": {
+        "fecha_inicio": "2024-04-22T12:00:00",
+        "fecha_fin": "2024-04-22T12:00:00",
+        "vo2_max": 49,
+        "ftp": 3.92,
+        "estado": "finalizada"
+      }
+    }
+  ]
+}
