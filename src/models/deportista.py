@@ -37,8 +37,9 @@ class Deportista(Model, Base):
     ciudad_residencia = Column(String(50))
     antiguedad_residencia = Column(Integer)
     contrasena = Column(String(50))
-    id_plan_subscripcion = Column(UUID, ForeignKey('plan_subscripcion.id'))
-    plan_subscripcion = relationship('PlanSubscripcion')
+    id_plan_subscripcion = Column(UUID(as_uuid=True), ForeignKey('plan_subscripcion.id'))
+    
+    plan_subscripcion: Mapped['PlanSubscripcion'] = relationship("PlanSubscripcion", backref="deportistas")
 
     def __init__(self, **info_deportista):
         Model.__init__(self)

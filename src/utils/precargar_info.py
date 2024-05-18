@@ -6,6 +6,7 @@ from src.models.db import db_session
 from src.models.deporte import Deporte
 from src.models.deportista import Deportista
 from src.models.ejercicio_deporte import EjercicioDeporte
+from src.models.eventos import Eventos
 from src.models.menu import Menu
 from src.models.plan import Plan
 from src.models.plan_alimenticio import PlanAlimenticio
@@ -36,6 +37,8 @@ def precargar_informacion():
     _precargar_plan_deportista()
 
     _precargar_sesiones()
+
+    _precargar_eventos()
 
 
 def _precargar_deporte():
@@ -242,3 +245,27 @@ def _precargar_sesiones():
             db_session.add(resultado_sesion)
             db_session.commit()
         print("Sesiones precargadas")
+
+
+
+def _precargar_eventos():
+    if not Eventos.query.all():
+        with open("cfg/eventos.json", encoding="utf-8") as eventos_file:
+            eventos_cfg = json.load(eventos_file)
+        
+        for evento in eventos_cfg['eventos']:
+            deporte: Deporte = Deporte.query.filter_by(nombre=evento['deporte']).first()
+            if deporte is None:
+                print(f"Deporte {evento['deporte']} no encontrado")
+            else:  
+                nuevo_evento = Eventos(
+                    id_deporte=deporte.id,
+                    nombre=evento['nombre'],
+                    descripcion=evento['descripcion'],
+                    fecha=evento['fecha'],
+                    lugar=evento['lugar'],
+                    pais=evento['pais']
+                )
+                db_session.add(nuevo_evento)
+                db_session.commit()
+        print("Eventos precargadas")

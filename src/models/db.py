@@ -31,4 +31,5 @@ def init_db():
     from .menu import Menu
     from .plan_alimenticio import PlanAlimenticio
     from .plan_deportista import PlanDeportista
+    from .eventos import Eventos
     Base.metadata.create_all(bind=engine)
